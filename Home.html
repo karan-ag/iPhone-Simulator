@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+  width: 190px;
+  height: 150px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.box {
+  width: 204px;
+  height: 400px;
+  position: absolute;
+  margin-left: 4px;
+  top: 5px;
+  left: 0;
+  border-radius: 20px;
+  background: url(go.jpg) no-repeat;
+  background-size: cover;
+ 
+}
+
+.overlay{
+    width: 212px;
+    height: 410px;
+    border-radius: 25px;
+    background: #000000;
+}
+.cam{
+    z-index: 2;
+    top: 10px;
+    border-radius: 3rem;
+    left: 45%;
+    position: absolute;
+    height: 12px;
+    width: 3rem;
+    background: black;
+}
+.camlen{
+    z-index: 3;
+    top: 2px;
+    border-radius: 50%;
+    left: 10%;
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    opacity: 0.8;
+    background: rgb(122, 122, 122);
+}
+.app{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    top: 2.5rem;
+    left: 6.5%;
+    position: absolute;
+}
+.col1{
+    border-radius: 20px;
+    height: 90px;
+    width: 90px;
+    background: rgb(202, 202, 202);
+    opacity: 0.7;
+
+}
+</style>
+<body>
+    <div class="container">
+        <div class="cam">
+            <div class="camlen"></div>
+        </div>
+        
+        <div class="overlay"></div>
+        <div class="box"></div>
+        <div class="app">
+            <div class="col1"></div>
+            <div class="col1"></div>
+        </div>
+      </div>
+</body>
+</html>
